@@ -1,0 +1,249 @@
+/* .......................   Scroll bar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+/* ....................... scroll bar end */
+/* ...................................... section one ...................... */
+.section_1 {
+  margin: 20px 20px 0px 20px;
+}
+
+.divided_two {
+  display: flex;
+  margin-left: 30px;
+}
+.sec_1 {
+  margin-left: 40px;
+}
+.table_1 td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.table_1 th {
+  padding: 4px;
+  color: rgb(86, 85, 85);
+  text-align: start;
+}
+.table_2 td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  padding: 4px;
+  margin-top: 10px;
+}
+.table_2 th {
+  padding: 4px;
+  color: rgb(86, 85, 85);
+  text-align: start;
+}
+
+.sec_2 {
+  margin-left: 30px;
+}
+.sec_1 td {
+  width: 250px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sec_2 td {
+  display: flex;
+  flex-direction: row;
+  width: 340px;
+  height: 30px;
+}
+
+/* .................................... sectionn 2 */
+.section_2 {
+  margin-left: 80px;
+  margin-top: 40px;
+}
+select {
+  border: none;
+  background-color: rgb(75, 74, 74);
+  outline: none;
+  color: white;
+}
+
+.td_1 {
+  display: flex;
+  flex-direction: column;
+}
+.Milissa {
+  background-color: rgb(27, 185, 27);
+  color: white;
+  padding: 4px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.name {
+  font-size: 1rem;
+}
+.td_2 {
+  display: flex;
+  flex-direction: column;
+}
+.time_ {
+  color: rgb(108, 108, 108);
+  font-size: 12px;
+  text-align: center;
+}
+.minute {
+  color: rgb(108, 108, 108);
+  font-size: 12px;
+  text-align: start;
+}
+.td_3 {
+  display: flex;
+  flex-direction: column;
+}
+.cliam {
+  color: skyblue;
+  font-size: 12px;
+}
+.paid {
+  background-color: green;
+  padding: 4px;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.td_4 {
+  display: flex;
+  flex-direction: column;
+}
+.Creative {
+  font-size: 12px;
+  color: skyblue;
+}
+.td_5 {
+  display: flex;
+  flex-direction: column;
+}
+.chekc {
+  color: aquamarine;
+  padding-left: 10px;
+}
+.payment {
+  display: flex;
+}
+.payment_details {
+  font-size: 12px;
+  color: skyblue;
+}
+
+.table_3 th {
+  border-bottom: 1px solid gray;
+  border-collapse: collapse;
+  background-color: rgb(75, 74, 74);
+  color: white;
+  padding: 10px 40px 10px 10px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: serif;
+}
+
+.table_3 td {
+  border-bottom: 1px solid gray;
+  border-collapse: collapse;
+  padding: 10px 40px 10px 20px;
+  font-size: 14px;
+  color: rgb(69, 68, 68);
+  font-weight: 600;
+}
+
+/* ............................... responsitive mobile  */
+
+@media only screen and (max-width: 600px) {
+  .divided_two {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .sec_2 {
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+
+  .sec_2 td {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 30px;
+    margin-left: 28px;
+  }
+  .section_1 {
+    margin: 20px 20px 0px 0px;
+  }
+
+  .section_2 {
+    overflow: scroll;
+    margin-left: 10px;
+  }
+}
+
+/* ................................................................ media query for big mobile ........ */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .section_2 {
+    overflow: scroll;
+  }
+  .divided_two {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+  }
+
+  .sec_2 {
+    margin-left: 40px;
+    margin-top: 2px;
+  }
+  .sec_2 td {
+    display: flex;
+    flex-direction: row;
+    width: 214px;
+    height: 30px;
+  }
+  /* .......................... */
+
+  /* ............ */
+}
+
+/* ................  responsitive for tablet */
+@media (min-width: 600px) and (max-width: 800px) {
+  .divided_two {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .sec_2 td {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 30px;
+    margin-left: 28px;
+  }
+}
